@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account Transactions</title>
+  <!  <link rel="stylesheet" href="style.css">  >
+</head>
+
+<body>
+    <div class="container">
+        <h2>Account Transactions</h2>
+        <p>Balance: $ <span id="balance">5000</span></p>
+
+        <form onsubmit="event.preventDefault(); deposit();">
+            <input type="number" id="deposit-amount" placeholder="Enter deposit amount">
+            <input type="text" name="account" id="account" required>
+            <button type="submit">Deposit</button>
+        </form>
+
+
+        <form onsubmit="event.preventDefault(); withdraw();">
+            <input type="number" id="withdraw-amount" placeholder="Enter withdraw amount">
+            <input type="text" name="account" id="account" required>
+            <button type="submit">Withdraw</button>
+    </div>
+
+    <! <script src="script.js"></script>  >
+    </body>
+
+</html>
