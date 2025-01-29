@@ -48,7 +48,3 @@ function recordTransaction(message) {
     li.textContent = message;
     historyElement.prepend(li);
 }
-
-
-
-AWDAWDAWDAWDAWDAWDAWDAWDAWDA

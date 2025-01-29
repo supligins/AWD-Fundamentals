@@ -12,17 +12,19 @@
         <h2>Account Transactions</h2>
         <p>Balance: ₱ <span id="balance">5000</span></p>
 
-        <form onsubmit="event.preventDefault(); deposit();">
+        <form id="deposit-form">
             <input type="number" id="deposit-amount" placeholder="Enter deposit amount">
-            <input type="text" name="account" id="account" required>
             <button type="submit">Deposit</button>
         </form>
 
 
-        <form onsubmit="event.preventDefault(); withdraw();">
+        <form id="withdraw-form">
             <input type="number" id="withdraw-amount" placeholder="Enter withdraw amount">
-            <input type="text" name="account" id="account" required>
             <button type="submit">Withdraw</button>
+        </form>
+
+        <h3>Transactions</h3>
+        <ul id="transactions"></ul>
     </div>
 
      <script src="script.js"></script>  
