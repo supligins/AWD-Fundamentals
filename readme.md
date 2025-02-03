@@ -4,25 +4,25 @@
 
 <br />
 <div align="center">
-  <a href="https://github.com/zyx-0314/">
+  <a href="https://github.com/supligins/">
   <!-- TODO: If you want to add logo or banner you can add it here -->
     <img src="./assets/img/nyebe_white.png" alt="Nyebe" width="130" height="100">
   </a>
 <!-- TODO: Change Title to the name of the title of your Project -->
-  <h3 align="center">Title</h3>
+  <h3 align="center">Account Transactions</h3>
 </div>
 <!-- TODO: Make a short description -->
 <div align="center">
-  Short Description. (Optional)
+  This project is a simple banking system.
 </div>
 
 <br />
 
 <!-- TODO: Change the zyx-0314 into your github username  -->
 <!-- TODO: Change the WD-Template-Project into the same name of your folder -->
-![](https://visit-counter.vercel.app/counter.png?page=zyx-0314/WD-Template-Project)
+![](https://visit-counter.vercel.app/counter.png?page=zyx-0314/AWD-Fundamentals)
 
-[![wakatime](https://wakatime.com/badge/user/018dd99a-4985-4f98-8216-6ca6fe2ce0f8/project/63501637-9a31-42f0-960d-4d0ab47977f8.svg)](https://wakatime.com/badge/user/018dd99a-4985-4f98-8216-6ca6fe2ce0f8/project/63501637-9a31-42f0-960d-4d0ab47977f8)
+[![wakatime](https://wakatime.com/badge/github/supligins/AWD-Fundamentals.svg)](https://wakatime.com/badge/github/supligins/AWD-Fundamentals)
 
 ---
 
@@ -59,20 +59,27 @@
 
 <!-- TODO: To be changed -->
 <!-- The following are just sample -->
-Description of the project in details.
+This project is a simple banking transaction system that allows users to deposit and withdraw money while keeping track of their transactions in a structured format. The goal is to simulate basic account transactions with a user-friendly UI and a blurred transaction container to enhance readability.
 
-Guiding Question:
-- What is the project
-- Whats the purpose
-- What are key components
-- What technology used and how it is used
+What is the project?
+A simple banking transaction system where users can deposit and withdraw money while tracking their transactions.
+
+
+Purpose
+To provide a user-friendly interface for managing transactions with real-time balance updates.
 
 ### Key Components
 <!-- TODO: List of Key Components -->
 <!-- The following are just sample -->
-- MultiPage Website/Single Page Website
-- Parallax transition
-- Transactional
+-Instant Balance Updates – Your balance changes the moment you deposit or withdraw.
+
+-Clear Transaction History – See your deposits and withdrawals in an easy-to-read table.
+
+-Blurred Background – Keeps the focus on transactions without distraction.
+
+-Input Validation – Prevents mistakes like entering negative numbers or withdrawing too much.
+
+-Mobile-Friendly – Works well on different screen sizes.
 
 ### Technology
 <!-- TODO: List of Technology Used -->
@@ -92,31 +99,20 @@ Guiding Question:
 7. File Structure to follow below.
 
 ```
-WD-ProjectName
+WD-AccountTransactions
 └─ assets
 |   └─ css
 |   |   └─ style.css
 |   └─ img
-|   |   └─ fileWith.jpeg/.jpg/.webp/.png
+|   |   └─ gold.gif
 |   └─ js
 |       └─ script.js
-└─ pages
-|  └─ pageName
-|     └─ assets
-|     |  └─ css
-|     |  |  └─ style.css
-|     |  └─ img
-|     |  |  └─ fileWith.jpeg/.jpg/.webp/.png
-|     |  └─ js
-|     |     └─ script.js
-|     └─ index.html
 └─ index.html
 └─ readme.md
-```
 
 ## Resources
 
 <!-- TODO: Add References -->
-| Title | Purpose | Link |
+| JavaScript Input Validation | Validating user inputs | https://www.w3schools.com/js/js_validation.asp |
 |-|-|-|
-| Sample Title | Sample purpose would be here like this and this is the example of what it is. | trykolang.com |
+| JavaScript DOM Manipulation | Guide to handling DOM elements | https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model |
