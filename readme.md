@@ -4,23 +4,18 @@
 
 <br />
 <div align="center">
-  <a href="https://github.com/supligins/">
-  <!-- TODO: If you want to add logo or banner you can add it here -->
-    <img src="./assets/img/nyebe_white.png" alt="Nyebe" width="130" height="100">
+  <a href="https://github.com/zyx-0314/">
+
   </a>
-<!-- TODO: Change Title to the name of the title of your Project -->
   <h3 align="center">Account Transactions</h3>
 </div>
-<!-- TODO: Make a short description -->
 <div align="center">
   This project is a simple banking system.
 </div>
 
 <br />
 
-<!-- TODO: Change the zyx-0314 into your github username  -->
-<!-- TODO: Change the WD-Template-Project into the same name of your folder -->
-![](https://visit-counter.vercel.app/counter.png?page=zyx-0314/AWD-Fundamentals)
+![](https://visit-counter.vercel.app/counter.png?page=supligins/AWD-Fundamentals)
 
 [![wakatime](https://wakatime.com/badge/github/supligins/AWD-Fundamentals.svg)](https://wakatime.com/badge/github/supligins/AWD-Fundamentals)
 
@@ -29,7 +24,6 @@
 <br />
 <br />
 
-<!-- TODO: If you want to add more layers for your readme -->
 <details>
   <summary>Table of Contents</summary>
   <ol>
@@ -57,29 +51,16 @@
 
 ## Overview
 
-<!-- TODO: To be changed -->
-<!-- The following are just sample -->
-This project is a simple banking transaction system that allows users to deposit and withdraw money while keeping track of their transactions in a structured format. The goal is to simulate basic account transactions with a user-friendly UI and a blurred transaction container to enhance readability.
-
-What is the project?
-A simple banking transaction system where users can deposit and withdraw money while tracking their transactions.
-
-
-Purpose
-To provide a user-friendly interface for managing transactions with real-time balance updates.
+This project is a simple banking transaction system that lets users deposit and withdraw money while tracking their transactions in a clear, structured format. It features a user-friendly interface with real-time balance updates and a blurred transaction container for better readability.
 
 ### Key Components
 <!-- TODO: List of Key Components -->
 <!-- The following are just sample -->
--Instant Balance Updates – Your balance changes the moment you deposit or withdraw.
+- Deposit button to deposit to user's balance
 
--Clear Transaction History – See your deposits and withdrawals in an easy-to-read table.
+- Withdraw button to withdraw from the user's balance
 
--Blurred Background – Keeps the focus on transactions without distraction.
-
--Input Validation – Prevents mistakes like entering negative numbers or withdrawing too much.
-
--Mobile-Friendly – Works well on different screen sizes.
+- A table to show transaction whether the user withdrew or deposited to the bank and it shows the exact amount the user withdrew/deposited
 
 ### Technology
 <!-- TODO: List of Technology Used -->
@@ -110,9 +91,10 @@ WD-AccountTransactions
 └─ index.html
 └─ readme.md
 
+```
+
 ## Resources
 
-<!-- TODO: Add References -->
+
 | JavaScript Input Validation | Validating user inputs | https://www.w3schools.com/js/js_validation.asp |
 |-|-|-|
-| JavaScript DOM Manipulation | Guide to handling DOM elements | https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model |
