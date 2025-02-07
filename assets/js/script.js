@@ -1,6 +1,6 @@
 let balance = 5000;
 const balanceElement = document.getElementById("balance");
-const historyElement = document.getElementById("history");
+const transactionsElementElement = document.getElementById("transactions");
 
 
 document.getElementById("deposit-form").addEventListener("submit", function(event){
@@ -46,5 +46,5 @@ function updateBalance() {
 function recordTransaction(status, amount) {
     let row = document.createElement("tr");
     row.innerHTML = `<td>${status}</td><td>₱${amount}</td>`;
-    transactionsElement.prepend(row);
+    transactionsElementElement.appendChild(row);
 }
