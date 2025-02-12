@@ -5,7 +5,7 @@ const transactionsElementElement = document.getElementById("transactions");
 function loadTransactions() {
     const storedTransactions = JSON.parse(localStorage.getItem("transactions")) || [];
     storedTransactions.forEach(transactions => {
-        recordTransaction(transactions.status, transactions.amount, false);
+        recordTransaction(transactions.status, transactions.amount, transactions.date, false);
     }
 );
 }
@@ -14,14 +14,18 @@ function updateBalance() {
     localStorage.setItem("balance", balance);
 }
 
-function recordTransaction(status, amount) {
+function recordTransaction(status, amount, date=null, save=true) {
+    if (!date) {
+        date = new Date().toLocaleDateString();
+    }
+
     let row = document.createElement("tr");
-    row.innerHTML = `<td>${status}</td><td>₱${amount}</td>`;
+    row.innerHTML = `<td>${date}</td><td>${status}</td><td>₱${amount}</td>`;
     transactionsElementElement.appendChild(row);
 
     if(save){
         let storedTransactions = JSON.parse(localStorage.getItem("transactions")) || [];
-        storedTransactions.push({status, amount});
+        storedTransactions.push({date, status, amount});
         localStorage.setItem("transactions", JSON.stringify(storedTransactions));
     }
 }
@@ -50,6 +54,13 @@ function deposit() {
         recordTransaction ('Deposited', amount);
         document.getElementById("deposit-amount").value = "";
     }
+
+document.getElementById("clear-history").addEventListener("click", function() {
+        localStorage.removeItem("transactions"); // Remove transaction history
+        localStorage.removeItem("balance"); // Reset balance
+        location.reload(); // Refresh the page to apply changes
+    });
+    
 
 
 
